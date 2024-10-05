@@ -1,5 +1,6 @@
 ﻿begin
   var hour := ReadInteger('Который час?:');
+  Assert((hour >= 0) and (hour <= 23));
   case hour of
     4..10: Println('Доброе утро, мир!');
     11..16: Println('Добрый день, мир!');
